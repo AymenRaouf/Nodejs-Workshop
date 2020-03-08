@@ -1,0 +1,10 @@
+<h1><%= p[0].title%></h1>
+<p><%= p[0].author%></p>
+<p><%= p[0].content %></p>
+<p><%= p[0].publishingDate%></p>
+<p><%= p[0].upvotes%></p>
+<form id="delete" action="/posts/<%=p[0].title%>?_method=DELETE" method="post">
+    
+    <button>Delete</button>
+</form>
+<h1>HERE</h1>
